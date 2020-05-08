@@ -114,7 +114,7 @@ else if ( $type == "MacOSX_ppc" || $type == "MacOSX_intel" || \
 	sed 's/REPLACE_CC/CC="cc -Wall"/' | \
 	sed 's/REPLACE_RANLIB/RANLIB="ranlib -s"/' | \
 	sed "s|REPLACE_INSTALLDIR|${INSTALLDIR}|" | \
-	sed 's/REPLACE_POSTFIX/_osx/' > $OUTPUT_FILE
+	sed 's/REPLACE_POSTFIX/_osx_x86_64' > $OUTPUT_FILE
 else if ( $type == "SunOS5" ) then
 	cat $INPUT_FILE | \
 	sed 's|REPLACE_CC|CC="gcc"|' | \

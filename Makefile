@@ -1,6 +1,6 @@
-POSTFIX=_amd64
-CC = CC="cc -Wall"
-RANLIB=RANLIB="ranlib"
+POSTFIX=_osx_x86_64
+CC = cc
+RANLIB=ranlib -s
 INSTALLDIR=/usr/local/bin
 
 VERSION=4.9
