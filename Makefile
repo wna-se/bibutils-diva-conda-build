@@ -1,10 +1,10 @@
-POSTFIX=_osx_x86_64
-CC = cc
-RANLIB=ranlib -s
-INSTALLDIR=/usr/local/bin
+POSTFIX=
+# CC = "CC=cc -Wall"
+RANLIB=RANLIB="echo Skipping ranlib"
+# INSTALLDIR=/usr/local/bin
 
-VERSION=4.9
-DATE=4/15/10
+# VERSION=4.9
+# DATE=4/15/10
 
 PROGRAMS=bib2xml ris2xml end2xml endx2xml med2xml isi2xml copac2xml \
 	biblatex2xml ebi2xml wordbib2xml \

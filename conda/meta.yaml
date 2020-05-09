@@ -1,0 +1,23 @@
+{% set VERSION = "4.9" %}
+{% set DATE = "4/15/10" %}
+
+package:
+  name: "bibutils-diva"
+  version: {{ VERSION }}
+
+source:
+  path: ../
+
+build:
+  number: 0
+  script: |
+    mkdir -p "{{ PREFIX }}/bin";
+    make install -k VERSION="{{ VERSION }}" -k DATE="{{ DATE }}" -k CC="cc -Wall" -k INSTALLDIR="{{ PREFIX }}/bin"
+
+requirements:
+  build:
+    - {{ compiler('c') }}
+    - make
+
+
+
